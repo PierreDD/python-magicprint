@@ -55,7 +55,7 @@ I am a demo string
 to take over the world
 ```
 
-This works by walking back up the `traceback` and extracting the text of the line of code from the string.
+This works by walking up the `traceback` and extracting the text of the line of code from the string.
 
 ```py
 def magicprint(arg):
