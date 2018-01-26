@@ -70,3 +70,20 @@ def magicprint(arg):
 ### This method has NOT BEEN TESTED in any of the following scenarios:
 ### 1. Threaded execution / multiprocessing execution
 ### 2. Alternative logging handlers (streams, remote etc)
+
+## Additional commentary
+
+If you're a true black belt ninja pro coder, you ought not to be using `print` in the first place. ヽ(｀０´）ノ 
+
+Our preferred method is the python `logging` module, with which you can install the `StreamHandler()` for console output.
+
+We've included a minimal reference implementation in the demo code.
+
+```py
+
+def magiclog(arg):
+    strx = traceback.format_list(traceback.extract_stack(limit=2))[0]
+    strx = strx.split('\n')[1].strip()
+    arg = str(arg)
+    logging.debug (strx + '\n' + arg + '\n')
+```
