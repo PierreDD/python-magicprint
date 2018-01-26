@@ -63,7 +63,7 @@ def magicprint(arg):
     strx = strx.split('\n')[1].strip()
     strx = '** ' + strx[ strx.find('(') : ] + ' **'
     arg = str(arg)
-    print (strx + '\n' + arg + '\n')
+    print( strx + '\n' + arg + '\n' )
 ```
 
 ## As written, this requires Python 3
@@ -85,5 +85,5 @@ def magiclog(arg):
     strx = traceback.format_list(traceback.extract_stack(limit=2))[0]
     strx = strx.split('\n')[1].strip()
     arg = str(arg)
-    logging.debug (strx + '\n' + arg + '\n')
+    logging.debug( strx + '\n' + arg + '\n' )
 ```
