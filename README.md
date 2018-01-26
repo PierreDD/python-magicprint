@@ -63,10 +63,10 @@ def magicprint(arg):
     strx = strx.split('\n')[1].strip()
     strx = '** ' + strx[ strx.find('(') : ] + ' **'
     arg = str(arg)
-    print (stryellow(strx) + '\n' + arg + '\n')
+    print (strx + '\n' + arg + '\n')
 ```
 
-# As written, this requires Python 3
-# This method has NOT BEEN TESTED in any of the following scenarios:
-# 1. Threaded execution / multiprocessing execution
-# 2. Alternative logging handlers (streams, remote etc)
+## As written, this requires Python 3
+### This method has NOT BEEN TESTED in any of the following scenarios:
+### 1. Threaded execution / multiprocessing execution
+### 2. Alternative logging handlers (streams, remote etc)
